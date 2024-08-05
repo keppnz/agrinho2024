@@ -1,0 +1,316 @@
+/* FONTES */
+@font-face{
+    font-family: Itim;
+    src: url(Itim-Regular.ttf);
+}
+
+@font-face{
+    font-family: LemonMilk;
+    src: url(LEMONMILK-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: LemonMilk2;
+    src: url(LEMONMILK-Regular.otf);
+}
+/* FIM FONTES */
+
+/* HEADER E FOOTER */
+*{
+    margin: 0 auto;
+}
+
+#header{
+    z-index: 2;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(#828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, transparent);
+
+    & img{
+        margin-left: 15px;
+        margin-top: 15px;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#login_header{
+    margin-top: 20px;
+    float: right;
+    display: inline-flex;
+
+    & p{
+        z-index: 4;
+        font-family: Itim;
+        color: #E7F4E7;
+        background-color: #828C63;
+        margin-right: 20px;
+        padding: 10px;
+        border: solid 2px ;
+        border-radius: 10px;
+        transition: 0.8s;
+    
+        &:hover{
+            background-color: #E7F4E7;
+            color: #828C63;
+            cursor:pointer;
+            scale: 1.1;
+            rotate: .5deg;
+        }
+    }
+}
+
+#menu_header{
+    & p{
+        color: #1a1b19;
+        font-size: 35px;
+        font-family: LemonMilk;
+        width: 50%;
+        margin-top: 18px;
+        margin-left: 85px;
+        position: absolute;
+    }
+}
+
+header h4{
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    font-family: LemonMilk2;
+}
+footer{
+    background-color: #828C63;
+    height: 150px;
+    & p{
+        text-align: center;
+        font-family: Itim;
+        transform: translate(0, 550%);
+    }
+    & hr{
+        transform: translate(0, 6500%);
+        width: 60%;
+    }
+}
+/* FIM HEADER E FOOTER */
+
+/* HOME */
+#home{
+    z-index: -1;
+    transition: .5s;
+    background-color: #D7DEB9;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.widehome{
+    width: 100%;
+    height: 400px;
+    background-image: url(wide.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textohome{
+    & h1{
+    width: 1000px;
+    font-family: LemonMilk;
+    top: 50%;
+    left: 50%;
+    color: #f5f8e6;
+    transform: translate(0%, 250%);
+    }
+    & h3{
+        font-family: Itim;
+        top: 50%;
+        left: 50%;
+        color: #f5f8e6;
+        transform: translate(13.4%, 1000%);
+    }
+    & p{
+        color: #828C63;
+    }
+}
+
+#produtores{
+    & h1{
+        color: #1a1b19;
+        transform: translate(0%, 20%);
+        text-align: center;
+        font-family: LemonMilk;
+        width: 80%;
+    }
+    & hr{
+        transform: translate(0%, 2000%);
+        border-color: #828C63;
+        width: 95%;
+    }
+    & img{
+        transform: translate(10%, 10%);
+        width: 18%;
+    }
+}
+
+.produtor{
+    width: 550px;
+    height: 120px;
+    border-radius: 10px;
+    background: rgba(130, 140, 99, 0.31);
+    transition: .5s;
+    & p{
+        transform: translate(25%, -300%);
+        font-family: Itim;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    &:hover{
+        scale: 1.03;
+
+    }
+    & button{
+        border: 2px solid #E7F4E7;
+        transform: translate(560%, -250%);
+        width: 80px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #828C63;
+        color: #E7F4E7;
+        transition: .5s;
+        font-family: Itim;
+        &:hover{
+            background-color: #e7f4e7b2;
+            color: #828C63;
+            border-color: #828C63;
+            scale: 1.007;
+        }
+    }
+    & h4{
+        transform: translate(25%, -450%);
+        font-family: sans-serif;
+    }
+}
+
+#produtor1{
+    transform: translate(-55%, 80%);
+}
+
+#produtor2{
+    transform: translate(55%, -20%);
+}
+
+#produtor3{
+    transform: translate(-55%, 50%);
+}
+
+#produtor4{
+    transform: translate(55%, -50%);
+}
+
+#produtor5{
+    transform: translate(-55%, 20%);
+}
+
+#produtor6{
+    transform: translate(55%, -80%);
+}
+
+#menu {
+    z-index: 3;
+    display: none;
+}
+
+#voltarbtn, #voltar_insc_btn{
+    display: none;
+}
+
+#home{
+    filter: blur(0px);
+}
+/* FIM HOME*/
+
+/* PÁGINA LOGIN*/
+#login_pagina, #insc_pagina{
+    position: fixed;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    height: 700px;
+    background: linear-gradient(#828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf, #828c63bf,  transparent);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    transform: translate(0, -100%);
+    transition: 1.5s;
+}
+
+#login_form, #insc_form{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f8e6;
+    border-radius: 7px;
+    padding: 40px;
+    gap: 5px;
+    transition: 0.5s;
+
+    & h1{
+        font-family: LemonMilk2;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        font-size: 2.3em;
+    }
+    & p{
+        font-family: Itim;
+        display: inline-block;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 25px;
+    }
+    & input{
+        background-color: #E7F4E7;
+        font-family: Itim;
+        padding: 15px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+        transition: all linear 160ms;
+        outline: none;
+
+        &:focus{
+            border: 2px solid #828C63;
+        }
+        &:hover{
+            border: 2px solid #9dab7392;
+        }
+    }
+    & label{
+        font-family: LemonMilk2;
+    }
+}
+#login_acess, #insc_acess{
+    font-family: LemonMilk2;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #828C63;
+    color: #E7F4E7;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0;
+    transition: .5s;
+
+    &:hover{
+        border: 2px solid #535844;
+        scale: 1.04;
+    }
+}
+
+

@@ -1,0 +1,129 @@
+<!-- HEAD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+    <title>Organa</title>
+</head>
+<!-- FIM HEAD -->
+
+<!-- HEADER -->
+<header id="header">
+    <div id="menu_header">
+        <img src="download.png">
+        <p>ORGANA</p><p></p><p></p>
+    </div>
+    <div id="login_header" class="item">
+        <p onclick="login()" id="loginbtn">Fazer Login</p>
+        <p onclick="voltar()" id="voltarbtn">Voltar a Home</p>
+        <p onclick="novo()" id="insc_btn">Inscreva-se Grátis</p>
+        <p onclick="voltar_novo()" id="voltar_insc_btn">Voltar a Home</p>
+    </div>
+    <div>
+        <h4 id="nome_user"></h4>
+    </div>
+</header>
+<!-- FIM HEADER -->
+
+<!-- LOGIN -->
+<div id="login_pagina">
+    <form method="post" id="login_form">
+        <h1>Login</h1>
+        <p>Digite os seus dados de acesso no campo abaixo.</p>
+
+        <label for="user" id="labeluser">Usuário</label>
+        <input type="text" placeholder="Digite seu username" id="user" required>
+
+        <label for="senha" id="labelsenha">Senha</label>
+        <input type="password" placeholder="Digite sua senha" id="senha" required>
+
+        <button type="button" id="login_acess" onclick="acessar()">ACESSAR</button>
+    </form>
+</div>
+<!-- FIM LOGIN -->
+
+<!-- INSCRIÇÃO -->
+<div id="insc_pagina">
+    <form method="post" id="insc_form">
+        <h1>Inscreva-se</h1>
+        <p>Digite os seus dados para criar a conta.</p>
+
+        <label for="criar_email" id="criar_email_label">E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail" id="criar_email" required>
+
+        <label for="criar_user" id="criar_user_label">Usuário</label>
+        <input type="text" placeholder="Digite seu username" id="criar_user" required>
+
+        <label for="criar_senha" id="criar_senha_label">Senha</label>
+        <input type="password" placeholder="Digite sua senha" id="criar_senha" required>
+
+        <button type="button" id="insc_acess" onclick="criar()">INSCREVER-SE</button>
+    </form>
+</div>
+<!-- FIM INSCRIÇÃO -->
+
+<!-- HOME -->
+<div id="home">
+    <div class="widehome">
+        <div class="textohome">
+            <h1>
+                SEJA BEM-VINDE A <p>ORGANA</p>
+            </h1>
+            <h3>
+CONCURSO AGRINHO - DO CAMPO À CIDADE, COLHENDO OPORTUNIDADES            </h3>
+        </div>
+    </div>
+    <div id="produtores">
+        <h1>Olá! Deixamos aqui abaixo espaço para nossos melhores produtores.</h1>
+        <hr>
+        <div id="produtor1" class="produtor">
+            <img src="icon.png" alt="">
+            <p>Produtor 1</p>
+            <h4>Aqui vem a descrição</h4>
+            <button>VER</button>
+        </div>
+        <div id="produtor2" class="produtor">
+            <img src="icon.png" alt="">
+            <p>Produtor 2</p>
+            <h4>Aqui vem a descrição</h4>
+            <button>VER</button>
+        </div>
+        <div id="produtor3" class="produtor">
+            <img src="icon.png" alt="">
+            <p>Produtor 3</p>
+            <h4>Aqui vem a descrição</h4>
+            <button>VER</button>
+        </div>
+        <div id="produtor4" class="produtor">
+            <img src="icon.png" alt="">
+            <p>Produtor 4</p>
+            <h4>Aqui vem a descrição</h4>
+            <button>VER</button>
+        </div>
+        <div id="produtor5" class="produtor">
+            <img src="icon.png" alt="">
+            <p>Produtor 5</p>
+            <h4>Aqui vem a descrição</h4>
+            <button>VER</button>
+        </div>
+        <div id="produtor6" class="produtor">
+            <img src="icon.png" alt="">
+            <p>Produtor 6</p>
+            <h4>Aqui vem a descrição</h4>
+            <button>VER</button>
+        </div>
+    </div>
+</div>
+<!-- FIM HOME -->
+
+<!-- FOOTER -->
+<footer id="footer">
+    <hr>
+    <p>Copyright &copy; 2023</p>
+</footer>
+<!-- FIM FOOTER -->
+<script src="scriptao.js"></script>
+</html>
